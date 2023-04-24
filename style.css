@@ -354,64 +354,82 @@ width:100%;
 
 
 /**/
-.project{
-    
-    padding: 50px;   
-}
-
-.project h1{
-    text-align: center;
-    color:#fff;
-    font-size: 5.8rem;
-    line-height: 2.3;
-}
-.gallery {
-    flex-basis: 100%;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
+#project{
+    padding:70px 50px;
 
 }
-
-.box{
-    background-size: cover;
-    background-position: bottom;
+#project h1{
     color: #fff;
+    text-align: center;
+font-size: 5rem;
+}
+#project .port-row{
+    padding-left:80px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+}
+#project .port-row .port-item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,20%);  
+}
+#project .port-row .port-item .port-img img{
+    width:100%;
+    border-radius: 10px;
+}
+#project .port-row .port-item .port-info{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to bottom right,#f06, #3cf);
+    padding:0 15px;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #cecaca;
-    background-blend-mode: multiply;
+    gap:10px;
+    transform: scale(0);
+    transition: 0.4s;
+    border-radius: 10px;
+    visibility: hidden;
 }
-
-.descriptionbox{
-    display: none;
+#project .port-row .port-item:hover .port-info{
+    transform: scale(1);
+    visibility: visible;
 }
-
-.box:hover .descriptionbox{
-    display: block;
+#project .port-row .port-item .port-info h4{
+    color: white;
+    font-size:35px;
+    font-weight: 600;
 }
-
-.box:hover .descriptionbox h1{
-    font-size: 4rem;
-    line-height: 1.5;
-    padding-left: 10px;
-    padding-right: 10px;
+#project .port-row .port-item .port-info h4+p{
+    color: white;
+    font-size:14px;
+    line-height: 1.4;
 }
-
-.box:hover{
-    
+#project .port-row .port-item .port-info a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    color:var(--main-color);
+    line-height: 46px;
+    transition: 0.4s;
+}
+#project .port-row .port-item .port-info a:hover{
     background-color: var(--bg-color);
-    animation: slideDown .5s ease forwards, opacity 0.5s ease;;
-    animation-delay: 0s;
-    cursor: pointer;
+    color:var(--text-color);
 }
-  
 
-.row-2 {
-    grid-row: span 2;
-}
 
 
 
