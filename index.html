@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Promi's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,10 +23,10 @@
         <a href = "#" class = "logo">Promi.</a>
         <nav class="navbar">
         <a href = "#home" style="--i:1" class="active">Home</a>
-        <a href = "#project"style="--i:2">Project</a>
-        <a href = "#achievement"style="--i:3">Achievement</a>
-        <a href = "#education" style="--i:4">Education</a>
-        <a href = "#contact" style="--i:5">Contact Me</a>
+        <a href = "#education" style="--i:2">Education</a>
+        <a href = "#project"style="--i:3">Project</a>
+        <a href = "#achievement"style="--i:4">Achievement</a>
+        <a href = "mailto:promimojumder8@gmail.com"style="--i:5">Contact Me</a>
     </nav>
     </header>
 
@@ -45,7 +45,7 @@
             </p><br><br><br>
 
             <div class="btn-box">
-                <a href="#"class="btn"target="_blank">Hire Me</a>
+                <a href="mailto:promimojumder8@gmail.com"class="btn"target="_blank">Contact Me</a>
                 <a href="https://www.canva.com/design/DAFYA8FMvS0/vkDAo0YrI7uiLGaSTZUD_A/edit?utm_content=DAFYA8FMvS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"class="btn2"target="_blank">Check My CV</a>
             </div>
         </div>
@@ -68,7 +68,38 @@
     </section>
 
 
+    <div class="education" id="education">
+        <h1>Education</h1>
+        <div class="educontainer leftt">
+                <img src="Images/school.jpeg">
+                <div class="edutext">
+                    <h2>S.S.C</h2>
+                    <small>2015 - 2017</small>
+                    <p>GPA: 5.00<br>Institute: Blue Bird School and College, Sylhet</p>
+                    <span class="leftarrow"></span>
+                </div>
+        </div>
 
+        <div class="educontainer rightt">
+            <img src="Images/college.jpeg">
+            <div class="edutext">
+                <h2>H.S.C</h2>
+                <small>2017 - 2019</small>
+                <p>GPA: 5.00<br>Institute: M.C. College, Sylhet</p>
+                <span class="rightarrow"></span>
+            </div>
+        </div>
+        <div class="educontainer leftt">
+            <img src="Images/sust.png">
+            <div class="edutext">
+                <h2>B.Sc in Software Engineering</h2>
+                <small>2020 - (cont.)</small>
+                <p>CGPA: 3.76 (3<sup>rd</sup> Year 1<sup>st</sup> Semester)<br>Institute: Shahjalal University of Science and Technology, Sylhet</p>
+                <span class="leftarrow"></span>
+            </div>
+        </div> 
+
+    </div>
     <section class = "project" id ="project">
         <h1>My Projects</h1>
         <div class="port-row">
@@ -223,40 +254,12 @@
 
 
     
-      
+
     
-
-<script type="module">
-    const slider = document.querySelector('.slider');
-    const prevBtn = document.querySelector('.slider-prev');
-    const nextBtn = document.querySelector('.slider-next');
-    const cards = slider.querySelectorAll('.card');
-    const cardWidth = cards[0].offsetWidth;
-    let scrollAmount = 0;
-    
-    nextBtn.addEventListener('click', () => {
-      if (scrollAmount + slider.offsetWidth < slider.scrollWidth) {
-        scrollAmount += cardWidth * 3.58;
-        slider.scroll({
-          left: scrollAmount,
-          behavior: 'smooth'
-        });
-      }
-    });
-    
-    prevBtn.addEventListener('click', () => {
-      if (scrollAmount > 0) {
-        scrollAmount -= cardWidth * 3.58;
-        slider.scroll({
-          left: scrollAmount,
-          behavior: 'smooth'
-        });
-      }
-    });
-  </script>
-
-
- 
-
 </body>
+
+
+<script src="script.js"></script>
+
+
 </html>

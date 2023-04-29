@@ -359,7 +359,7 @@ width:100%;
 
 
 
-/**/
+/*project*/
 #project{
     padding:70px 50px;
 
@@ -529,6 +529,136 @@ opacity: 1;
     background-color: var(--bg-color);
     color:var(--text-color);
 }
+
+/*education*/
+.education{
+    position: relative;
+    max-width:1400px;
+    margin:140px;
+}
+
+.education h1{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.educontainer{
+    padding:10px 50px;
+    position: relative;
+    width:50%;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 1s ease forwards;
+    animation-delay: calc(0.3s * (var(--index) + 1));
+    transition: transform 0.3s ease;
+}
+
+.edutext{
+    padding:20px 30px;
+    background: var(--second-bg-color);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px 1px var(--main-color);
+}
+
+.edutext small{
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.edutext p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.edutext h2{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.leftt{
+    left:0;
+}
+
+.rightt{
+    left:50%;
+}
+
+.educontainer img{
+    position: absolute;
+    width:40px;
+    border-radius: 50%;
+    right:-20px;
+    top:32px;
+    z-index: 10;
+}
+
+.rightt img{
+    left:-20px;
+}
+
+
+.education::after{
+    content: '';
+    position: absolute;
+    width:6px;
+    height: 90%;
+    background: var(--second-bg-color);
+    top:70px;
+    left:50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+    box-shadow: 1px 1px 1px 1px var(--main-color);
+}
+
+.leftarrow{
+    height:0;
+    width:0;
+    position: absolute;
+    top:28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 16px solid var(--second-bg-color);
+    right:-15px;
+}
+
+.rightarrow{
+    height:0;
+    width:0;
+    position: absolute;
+    top:28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid var(--second-bg-color);
+    left:-14px;
+}
+.slide-in {
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
 /*extra*/
 
 @keyframes slideTop{
@@ -545,7 +675,7 @@ opacity: 1;
 @keyframes slideDown{
     0%{
         opacity:0;
-        transform: translateY(-100px);
+        transform: translateY(-50px);
     }
     100%{
         opacity:1;
@@ -615,5 +745,14 @@ opacity: 1;
      }
 
 }
+@keyframes moveline{
+    0%{
+        height:0;
+    }
+    100%{
+        height:100%;
+    }
+}
+
 
   
