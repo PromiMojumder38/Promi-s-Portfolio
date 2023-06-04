@@ -28,8 +28,21 @@ body{
     background: var(--bg-color);
    color:var(--text-color);
 }
+.chkbtn{
+    font-size: 30px;
+    color: white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#chkbtn{
+    display: none;
 
+}
 .header{
+    
     position:absolute;
     top:0;
     left:0;
@@ -79,21 +92,24 @@ body{
     display:none;
 }
 
-
-.home{
-    display:flex;
-    align-items: center;
-    width:100%;
-   height: 100vh;
-    padding:0 10%; 
-   padding-top: -10px;
-    
+.home {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    padding-top: 8%;
 }
-.home-content{
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-top: 100px;
     max-width: 80rem;
 }
-
 .home-content h1{
     font-size: 5.8rem;
     font-weight: 700;
@@ -133,7 +149,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 34.5rem;
-    height: 8rem;
+    height: 4rem;
 }
 
 
@@ -225,11 +241,11 @@ width:100%;
 
 
 /**/
-.home-sci{
-    position: absolute;
-    bottom:10rem;
+.home-sci {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2px; 
 }
 .home-sci a{
     position: relative;
@@ -292,6 +308,8 @@ width:100%;
 
 
 .home-imgHover{
+
+    margin-top: 80px;
     width: 410px;
     height:410px;
     background: var(--bg-color);
@@ -305,14 +323,14 @@ width:100%;
     position:relative;
     width:100%;
     height:100%;
-    background: yellowgreen;
+    background: greenyellow;
     border-radius:50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 50px;
     
-    top:60px;
+    top:30px;
 }
 
 .home-imgHover .glowing-circle::after{
@@ -755,4 +773,96 @@ opacity: 1;
 }
 
 
+  @media screen and (max-width:800px){
+    .btn-box{
+        width:24rem;
+        margin-bottom:0px;
+    }
+    .btn-box .btn, .btn-box .btn2{
+        width: 11rem;
+        height: 3.5rem;
+        font-size: 12px;
+    }
+  .header{
+    padding-left: 65px;
+  } 
+  .home .home-content h1{
+    padding-left:0px;
+    font-size: 4rem;
+  }   
+  .home .home-content h3{
+    font-size: 3rem;
+  } 
+  .home .home-content p{
+    font-size: 1.2rem;
+  } 
+.chkbtn{
+    display: block;
+}
+.navbar a{
+    position: fixed;
+}
+.home-content{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#achievement .ser-row{
+    
+    display: flex;
+    flex-direction: column;
+}
+#achievement{
+    padding:40px 50px;
+}
+h1{
+    padding-left:50px;
+    font-size: 3.2rem;
+}
+#project{
+    padding-left: 0px;
+}
+#project h1{
+margin-left: 0px;   
+font-size: 3.2rem;
+}
+#project .port-row{
+    display: flex;
+    flex-direction: column;
+}
+#project .port-row .port-item{
+    height: 300px;
+    width:280px;
+}
+#achievement h2{
+    font-size: 2.8rem;
+    text-align: center;
+    padding-left: 10px;
+}
+#achievement .ser-row .ser-item .ser-info p{
+    font-size: 13px;
+}
+#achievement .ser-row .ser-item{
+    height: 300px;
+    width:300px;
+}
+
   
+#education{
+    display: flex;
+    flex-direction: column;
+}
+#home-sci{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.home-sci a{
+    width: 50px;
+    height:45px;
+    margin-top: -20px;
+    font-weight: 200;
+}
+
+  }

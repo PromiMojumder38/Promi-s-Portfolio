@@ -2,6 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promi's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="Images/logo.png">
     <link rel = "stylesheet" href = "style.css">
@@ -19,16 +20,21 @@
 <body>
 
     <!--header design-->
-    <header class = "header">
-        <a href = "#" class = "logo">Promi.</a>
+    <header class="header">
+        <a href="#" class="logo">Promi.</a>
         <nav class="navbar">
-        <a href = "#home" style="--i:1" class="active">Home</a>
-        <a href = "#education" style="--i:2">Education</a>
-        <a href = "#project"style="--i:3">Project</a>
-        <a href = "#achievement"style="--i:4">Achievement</a>
-        <a href = "mailto:promimojumder8@gmail.com"style="--i:5">Contact Me</a>
-    </nav>
+            <input type="chkbox" id="chkbox">
+            <label for="chkbtn" class="chkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#education" style="--i:2">Education</a>
+            <a href="#project" style="--i:3">Project</a>
+            <a href="#achievement" style="--i:4">Achievement</a>
+            <a href="mailto:promimojumder8@gmail.com" style="--i:5">Contact Me</a>
+        </nav>
     </header>
+    
 
 
     <section class="home" id="home">
@@ -38,8 +44,8 @@
                 <h3>Software Engineer</h3>
             </div><br><br><br>
             <p>Currently pursuing a B.Sc. in Software Engineering 
-                at Shahjalal University of Science and <br>Technology (SUST) in Sylhet, Bangladesh. 
-                My passion lies in Web Development and Data<br> Science, and I am currently advancing my 
+                at Shahjalal University of Science and Technology (SUST) in Sylhet, Bangladesh. 
+                My passion lies in Web Development and Data Science, and I am currently advancing my 
                 skills in Python, HTML, CSS, and JavaScript, and working with Firebase for web 
                 development.
             </p><br><br><br>
@@ -48,14 +54,15 @@
                 <a href="mailto:promimojumder8@gmail.com"class="btn"target="_blank">Contact Me</a>
                 <a href="https://www.canva.com/design/DAFYA8FMvS0/vkDAo0YrI7uiLGaSTZUD_A/edit?utm_content=DAFYA8FMvS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"class="btn2"target="_blank">Check My CV</a>
             </div>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/promi.118"target="_blank"><i class= 'bx bxl-facebook'></i></a>
+                <a href="https://www.linkedin.com/in/promi-mojumder-43772a1b6/"target="_blank"><i class= 'bx bxl-linkedin'></i></a>
+                <a href="https://github.com/PromiMojumder38"target="_blank"><i class= 'bx bxl-github'></i></a>
+                
+            </div>
         </div>
 
-        <div class="home-sci">
-            <a href="https://www.facebook.com/promi.118"target="_blank"><i class= 'bx bxl-facebook'></i></a>
-            <a href="https://www.linkedin.com/in/promi-mojumder-43772a1b6/"target="_blank"><i class= 'bx bxl-linkedin'></i></a>
-            <a href="https://github.com/PromiMojumder38"target="_blank"><i class= 'bx bxl-github'></i></a>
-            
-        </div>
+        
 
         <div class="home-imgHover">
             <div class="glowing-circle">
@@ -177,8 +184,20 @@
     </section>
 
     <section class="achievement" id="achievement">
-       <h2>Achievements</h2>
+       <h1>Achievements</h1>
        <div class="ser-row">
+
+        <div class="ser-item">
+            <div class="ser-info">
+                <i class="fa-brands fa-slack"></i>
+                <h2>All Girls' Programming Contest</h2>
+                <p>One of the Authors and Moderators of Luna Shamsuddoha Girls In ICT Day Celebration - All Girls' Programming Contest 2023</p>
+               </div>
+    
+        <div class="hirebtn">
+            <a href="https://toph.co/c/luna-shamsuddoha-girls-in-ict-day-celebration-2023"class="globBtn"target="_blank">See More</a>
+        </div>
+    </div>
     <div class="ser-item">
         <div class="ser-info">
          <i class="fa-brands fa-slack"></i>
