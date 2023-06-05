@@ -67,7 +67,8 @@ body{
 
 
 .navbar a{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 1.7rem;
     color:var(--text-color);
     font-weight: 500;
@@ -79,6 +80,10 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
 .navbar a:hover,
 .navbar a.active{
     
@@ -772,8 +777,15 @@ opacity: 1;
     }
 }
 
-
   @media screen and (max-width:800px){
+    .home-imgHover{
+        width: 200px;
+        height:200px;
+    }
+    .home-imgHover .glowing-circle{
+        width:200px;
+        height:200px;
+    }
     .btn-box{
         width:24rem;
         margin-bottom:0px;
@@ -815,6 +827,7 @@ opacity: 1;
 }
 #achievement{
     padding:40px 50px;
+    padding-left: 80px;
 }
 h1{
     padding-left:50px;
@@ -831,9 +844,9 @@ font-size: 3.2rem;
     display: flex;
     flex-direction: column;
 }
-#project .port-row .port-item{
-    height: 300px;
-    width:280px;
+#project .port-row .port-item .port-img img{
+    height: 340px;
+    width:480px;
 }
 #achievement h2{
     font-size: 2.8rem;
@@ -841,28 +854,51 @@ font-size: 3.2rem;
     padding-left: 10px;
 }
 #achievement .ser-row .ser-item .ser-info p{
-    font-size: 13px;
+    font-size: 16px;
 }
 #achievement .ser-row .ser-item{
-    height: 300px;
-    width:300px;
+    height: 320px;
+    width:470px;
 }
 
   
 #education{
     display: flex;
     flex-direction: column;
+    padding:0;
+    margin:0;
+    padding-top: 40px;
+}
+#education .educontainer{
+    width: 300px;
+}
+.edutext h2{
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+.edutext small{
+    padding-top: 5px;
+    font-size: 1.5rem;
+}
+.edutext p{
+    font-size: 1.2rem;
 }
 #home-sci{
     position: relative;
     display: flex;
     flex-direction: column;
 }
-.home-sci a{
+
+.home-sci ul li{
     width: 50px;
     height:45px;
     margin-top: -20px;
     font-weight: 200;
+    
+}
+.listt{
+    display: flex;
+    flex-direction: column;
 }
 
   }
