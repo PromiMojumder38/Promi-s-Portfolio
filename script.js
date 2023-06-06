@@ -33,13 +33,4 @@ var listItems = document.querySelector('ul li a');
     closeIcon.style.display = 'none';
     menuToggle.style.display = 'block';
   });
-  var navbar = document.querySelector('.navbar');
-
-navbar.addEventListener('touchstart', function() {
-  navbar.classList.add('touched');
-});
-
-navbar.addEventListener('touchend', function() {
-  navbar.classList.remove('touched');
-});
-
+  

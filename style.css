@@ -952,6 +952,9 @@ opacity: 1;
         padding-left: 40px;
     }
     #achievement .ser-row{
+       grid-template-columns: 1fr;
+    }
+    #achievement .ser-row{
         margin-left: 10px;
     }
     #achievement .ser-row .ser-item{
