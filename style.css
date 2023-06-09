@@ -1038,3 +1038,69 @@ margin-left:-55px;
         }
         
   } 
+  @media (max-width: 1024px){
+    .logo{
+    font-size:3.5rem;
+    }
+      
+      nav {
+        background: #112e42;
+        height: 80px;
+        width: 100%;
+        position: relative;
+      }
+      
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 55%;
+        height: 90vh;
+        background: #112e42;
+        top: 70px;
+        left: -100%;
+        transition: all 0.5s;
+      }
+      
+      nav ul li {
+        line-height: 80px;
+        margin: 0 5px;
+        
+      }
+      
+      nav ul li a {
+        font-size: 16px;
+        text-align: center;
+      }
+      
+      .checkbtn, .closebtn {
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;
+      }
+      .checkbtn{
+        display: block;
+      }
+      
+      
+      .checkbtn i, .closebtn i {
+        margin-left: 580px;
+      }
+      
+      input[type="checkbox"] {
+        display: none;
+      }
+      
+      a.active,
+      a:hover {
+        background: none;
+        color: var(--main-color);
+        transition: 0.5s;
+      }
+      
+      input[type="checkbox"]:checked ~ ul {
+        left: 0;
+      }
+      
+  }
