@@ -820,20 +820,20 @@ opacity: 1;
         text-align: center;
       }
       
-      .checkbtn, .closebtn {
+      .checkbtn {
         font-size: 30px;
         color: #fff;
-        float: right;
         line-height: 80px;
-        margin-right: 40px;
       }
       .checkbtn{
         display: block;
       }
       
       
-      .checkbtn i, .closebtn i {
-        margin-left: 280px;
+      .checkbtn i{
+        position: absolute;
+        right:0;
+        top: 24px;
       }
       
       input[type="checkbox"] {
@@ -1040,12 +1040,12 @@ margin-left:-55px;
   } 
   @media (max-width: 1024px){
     .logo{
-    font-size:3.5rem;
+    font-size:3.8rem;
     }
       
       nav {
         background: #112e42;
-        height: 80px;
+        height: 100px;
         width: 100%;
         position: relative;
       }
@@ -1060,6 +1060,7 @@ margin-left:-55px;
         top: 70px;
         left: -100%;
         transition: all 0.5s;
+        margin-top:50px;
       }
       
       nav ul li {
@@ -1073,19 +1074,18 @@ margin-left:-55px;
         text-align: center;
       }
       
-      .checkbtn, .closebtn {
+      .checkbtn {
         font-size: 30px;
         color: #fff;
-        float: right;
-        line-height: 80px;
-      }
-      .checkbtn{
         display: block;
       }
+     
       
-      
-      .checkbtn i, .closebtn i {
-        margin-left: 580px;
+      .checkbtn i {
+        font-size: 4rem;
+        right:-90px;
+        top:30px;
+        position: absolute;
       }
       
       input[type="checkbox"] {
@@ -1101,6 +1101,70 @@ margin-left:-55px;
       
       input[type="checkbox"]:checked ~ ul {
         left: 0;
+      }
+      .home-content{
+        width:80rem;
+      }
+      #home h1{
+        font-size: 4.5rem;
+      }
+      #home .home-content .text-animate h3{
+        font-size: 3.8rem;
+      }
+      #home .home-content p{
+        font-size: 19px;
+      }
+      .home-sci a{
+        height: 50px;
+        width: 50px;
+        font-weight: 160;
+    }
+
+    .home-imgHover{
+        width: 310px;
+       height: 310px;
+float:right;
+         }
+         .home-imgHover .glowing-circle{
+             height: 310px;
+             width: 310px;
+             float: right;
+    margin-right: -220px;
+         }
+     
+     .home-imgHover .glowing-circle::after{
+        width:290px;
+         height:290px;
+         
+     }
+     .glowing-circle span{
+         width: 315px;
+         height: 315px;
+         
+     }
+     
+     .glowing-circle .image{
+         width:290px;
+         height: 290px;
+         
+     }
+     .image img{
+          width: 220px;
+         height: 320px;
+         overflow: hidden;
+      }
+      .education{
+        margin-left:20px;
+      } 
+      .education h1{
+        margin-left: 190px;
+      } 
+      .educontainer{
+        width:45rem;
+
+      }
+      .education::after{
+        margin-left: 40px;
       }
       
   }
