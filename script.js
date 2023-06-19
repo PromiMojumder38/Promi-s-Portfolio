@@ -18,3 +18,5 @@ closeIcon.addEventListener('click', function() {
   menuToggle.checked = false;
   list.style.left = '-100%';
 });
+
+
