@@ -778,16 +778,17 @@ opacity: 1;
 /* Mobile Menu */
 @media (max-width: 767px) {
     body {
-        width: 400px;
+        width: 100%;
         margin: 0 auto;
       }
       
       .logo {
         font-size: 30px;
-        padding: 47px;
+        padding: 48px;
         font-weight: bold;
         position: absolute;
         left: 0;
+        margin-top: 25px;
       }
       
       nav {
@@ -806,7 +807,6 @@ opacity: 1;
         background: #112e42;
         top: 70px;
         left: -100%;
-        transition: all 0.5s;
       }
       
       nav ul li {
@@ -820,20 +820,22 @@ opacity: 1;
         text-align: center;
       }
       
-      .checkbtn {
+      .checkbtn, .closebtn {
         font-size: 30px;
         color: #fff;
+        float: right;
         line-height: 80px;
+        margin-right: 40px;
       }
       .checkbtn{
         display: block;
       }
       
       
-      .checkbtn i{
+      .checkbtn i, .closebtn i {
         position: absolute;
-        right:0;
-        top: 24px;
+        right:70px;
+        margin-top: -3px;
       }
       
       input[type="checkbox"] {
@@ -858,20 +860,16 @@ opacity: 1;
         display: flex;
         flex-direction: column;
         padding-top: -10%;
-max-width: 700px;
       }
       
       .home h1 {
-        font-size: 4rem;
-      }
-      .home .home-content{
-        max-width: 50vh;
+        font-size: 4.5rem;
       }
       .home .home-content .text-animate h3{
-        font-size: 3.2rem;
+        font-size: 3.3rem;
       }
       .home .home-content p{
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
       .btn-box{
         width: 28.5rem;
@@ -887,7 +885,7 @@ max-width: 700px;
         font-weight: 200;
     }
    #education{
-    margin-top: 60rem;   }
+    margin-top: 50rem;   }
     .education{
         margin: 50px auto;
     }
@@ -897,7 +895,7 @@ max-width: 700px;
         margin-left: 100px;
     line-height: 2.5;    }
     .educontainer{
-        width:55%;
+        width:95%;
         padding-left:80px;
         padding-right:25px;
     }
@@ -911,18 +909,18 @@ max-width: 700px;
     left:10px;    
     }
     .educontainer h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 1.5;
         margin-bottom: 20px;    
     }
     .educontainer .edutext small{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .educontainer .edutext p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .education::after{
-        left: -10px;
+        left: 30px;
     }
     .leftarrow, .rightarrow{
         border-right: 15px solid var(--second-bg-color);
@@ -980,7 +978,7 @@ max-width: 700px;
         .home-imgHover{
            width: 310px;
           height: 310px;
-margin-left:-215px;
+margin-left:-55px;
 
             }
             .home-imgHover .glowing-circle{
@@ -1044,12 +1042,12 @@ margin-left:-215px;
   } 
   @media (max-width: 1024px){
     .logo{
-    font-size:3.8rem;
+    font-size:3.5rem;
     }
       
       nav {
         background: #112e42;
-        height: 100px;
+        height: 80px;
         width: 100%;
         position: relative;
       }
@@ -1064,7 +1062,6 @@ margin-left:-215px;
         top: 70px;
         left: -100%;
         transition: all 0.5s;
-        margin-top:50px;
       }
       
       nav ul li {
@@ -1078,18 +1075,19 @@ margin-left:-215px;
         text-align: center;
       }
       
-      .checkbtn {
+      .checkbtn, .closebtn {
         font-size: 30px;
         color: #fff;
+        float: right;
+        line-height: 80px;
+      }
+      .checkbtn{
         display: block;
       }
-     
       
-      .checkbtn i {
-        font-size: 4rem;
-        right:-90px;
-        top:30px;
-        position: absolute;
+      
+      .checkbtn i, .closebtn i {
+        margin-left: 580px;
       }
       
       input[type="checkbox"] {
@@ -1105,70 +1103,6 @@ margin-left:-215px;
       
       input[type="checkbox"]:checked ~ ul {
         left: 0;
-      }
-      .home-content{
-        width:80rem;
-      }
-      #home h1{
-        font-size: 4.5rem;
-      }
-      #home .home-content .text-animate h3{
-        font-size: 3.8rem;
-      }
-      #home .home-content p{
-        font-size: 19px;
-      }
-      .home-sci a{
-        height: 50px;
-        width: 50px;
-        font-weight: 160;
-    }
-
-    .home-imgHover{
-        width: 310px;
-       height: 310px;
-float:right;
-         }
-         .home-imgHover .glowing-circle{
-             height: 310px;
-             width: 310px;
-             float: right;
-    margin-right: -220px;
-         }
-     
-     .home-imgHover .glowing-circle::after{
-        width:290px;
-         height:290px;
-         
-     }
-     .glowing-circle span{
-         width: 315px;
-         height: 315px;
-         
-     }
-     
-     .glowing-circle .image{
-         width:290px;
-         height: 290px;
-         
-     }
-     .image img{
-          width: 220px;
-         height: 320px;
-         overflow: hidden;
-      }
-      .education{
-        margin-left:20px;
-      } 
-      .education h1{
-        margin-left: 190px;
-      } 
-      .educontainer{
-        width:45rem;
-
-      }
-      .education::after{
-        margin-left: 40px;
       }
       
   }
