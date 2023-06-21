@@ -1162,7 +1162,7 @@ margin-left:-55px;
         margin: 50px auto;
     }
     .education h1{
-        font-size: 3rem;
+        font-size: 3.8rem;
         text-align: center;
     line-height: 2.5;    }
     .educontainer{
@@ -1194,7 +1194,7 @@ margin-left:-55px;
         margin-top: 70px;
     }
     #project{
-        max-width: 710px;
+        max-width: 800px;
     }
     #project h1{
         font-size: 3.5rem;
@@ -1202,14 +1202,14 @@ margin-left:-55px;
         margin-top: 80px;
     }
     #project .port-row{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        padding-left: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+        padding-left: 10px;
     }
     #project .port-row .port-item .port-info h4{
         font-size:25px;
     }
     #project .port-row .port-item .port-img img{
-        width: 300px;
+        width: 360px;
         height: 210px;
       }
       #achievement{
@@ -1217,8 +1217,8 @@ margin-left:-55px;
       }
       #achievement h1{
         font-size: 3.5rem;
-        padding-left: 60px;
-    }
+        padding-left: 90px;
+}
     #achievement .ser-row{
        grid-template-columns: 1fr 1fr;
     }
@@ -1226,16 +1226,16 @@ margin-left:-55px;
         margin-left: 10px;
     }
     #achievement .ser-row .ser-item{
-        height: 275px;
-        width:290px;
+        height: 280px;
+        width:305px;
     }
     #achievement .ser-row .ser-item .ser-info h2{
-        font-size: 17px;
+        font-size: 19px;
         font-weight: 600;
         }
         #achievement .ser-row .ser-item .ser-info p{
         font-weight: 200;
-        font-size: 11px;
+        font-size: 13px;
         }
 
 
