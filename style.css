@@ -781,7 +781,9 @@ opacity: 1;
         width: 100%;
         margin: 0 auto;
       }
-      
+      .bx{
+        font-size: 25px;
+    }
       .logo {
         font-size: 30px;
         padding: 48px;
@@ -1041,9 +1043,19 @@ margin-left:-55px;
         
   } 
   @media (max-width: 1024px){
-    .logo{
-    font-size:3.5rem;
-    }
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      
+      .logo {
+        font-size: 30px;
+        padding: 78px;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        margin-top: 25px;
+      }
       
       nav {
         background: #112e42;
@@ -1056,12 +1068,11 @@ margin-left:-55px;
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 55%;
+        width: 40%;
         height: 90vh;
         background: #112e42;
         top: 70px;
         left: -100%;
-        transition: all 0.5s;
       }
       
       nav ul li {
@@ -1080,6 +1091,7 @@ margin-left:-55px;
         color: #fff;
         float: right;
         line-height: 80px;
+        margin-right: 40px;
       }
       .checkbtn{
         display: block;
@@ -1087,7 +1099,9 @@ margin-left:-55px;
       
       
       .checkbtn i, .closebtn i {
-        margin-left: 580px;
+        position: absolute;
+        right:100px;
+        margin-top: -3px;
       }
       
       input[type="checkbox"] {
@@ -1104,5 +1118,159 @@ margin-left:-55px;
       input[type="checkbox"]:checked ~ ul {
         left: 0;
       }
+      
+      
+      
+      /*home section*/
+      .home{
+        display: flex;
+        flex-direction: row;
+        top: 30px;
+      }
+      .home .home-content{
+        max-width: 50%;
+      }
+      .home h1 {
+        font-size: 4.2rem;
+      }
+      .home .home-content .text-animate h3{
+        font-size: 3rem;
+      }
+      .home .home-content p{
+        font-size: 1.3rem;
+      }
+      .btn-box{
+        width: 25.5rem;
+    }
+    
+    .btn-box .btn, .btn-box .btn2{
+        width:120px;
+        height: 40px;
+        font-size:15px;
+    }
+    .bx{
+        font-size: 25px;
+    }
+    .home-sci a{
+        height: 50px;
+        width: 50px;
+        font-weight: 80;
+    }
+   #education{
+    margin-top: 8rem;   }
+    .education{
+        margin: 50px auto;
+    }
+    .education h1{
+        font-size: 3rem;
+        text-align: center;
+    line-height: 2.5;    }
+    .educontainer{
+        width:42%;
+        padding-left:70px;
+        padding-right:15px;
+    }
+    
+    .educontainer h2{
+        font-size: 2.2rem;
+        line-height: 1.5;
+        margin-bottom: 20px;    
+    }
+    .educontainer .edutext small{
+        font-size: 1.6rem;
+    }
+    .educontainer .edutext p{
+        font-size: 1.4rem;
+    }
+    .leftt img{
+        position: absolute;
+        left: 365px;
+    }
+    .edutext{
+        box-shadow: 1.5px 2px 1px var(--main-color);
+        left: 0;
+    }
+    .education::after{
+        margin-top: 70px;
+    }
+    #project{
+        max-width: 710px;
+    }
+    #project h1{
+        font-size: 3.5rem;
+        padding-left: 35px;
+        margin-top: 80px;
+    }
+    #project .port-row{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding-left: 0px;
+    }
+    #project .port-row .port-item .port-info h4{
+        font-size:25px;
+    }
+    #project .port-row .port-item .port-img img{
+        width: 300px;
+        height: 210px;
+      }
+      #achievement{
+        padding-left: 32px;
+      }
+      #achievement h1{
+        font-size: 3.5rem;
+        padding-left: 60px;
+    }
+    #achievement .ser-row{
+       grid-template-columns: 1fr 1fr;
+    }
+    #achievement .ser-row{
+        margin-left: 10px;
+    }
+    #achievement .ser-row .ser-item{
+        height: 275px;
+        width:290px;
+    }
+    #achievement .ser-row .ser-item .ser-info h2{
+        font-size: 17px;
+        font-weight: 600;
+        }
+        #achievement .ser-row .ser-item .ser-info p{
+        font-weight: 200;
+        font-size: 11px;
+        }
+
+
+
+
+        .home-imgHover{
+           width: 250px;
+          height: 250px;
+margin-left:-12px;
+
+            }
+            .home-imgHover .glowing-circle{
+                height: 250px;
+                width: 250px;
+            }
+        
+        .home-imgHover .glowing-circle::after{
+           width:230px;
+            height:230px;
+                    }
+        .glowing-circle span{
+            width: 260px;
+            height: 260px;
+            
+        }
+        
+        .glowing-circle .image{
+            width:230px;
+            height: 230px;
+            
+        }
+        .image img{
+             width: 150px;
+            height: 250px;
+            overflow: hidden;
+         } 
       
   }
