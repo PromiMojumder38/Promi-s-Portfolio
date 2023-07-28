@@ -394,14 +394,16 @@ font-size: 5rem;
     padding-left:80px;
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap:20px;
+    grid-template-columns: repeat(auto-fill, 375px);
+    grid-gap:18px;
 }
 #project .port-row .port-item{
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0,20%);  
+    width: 100%;
+    height: 250px;
 }
 #project .port-row .port-item .port-img img{
     width:100%;
@@ -434,6 +436,7 @@ font-size: 5rem;
     color: white;
     font-size:35px;
     font-weight: 600;
+    
 }
 #project .port-row .port-item .port-info h4+p{
     color: white;
